@@ -1,0 +1,33 @@
+.delivery {
+  position: relative;
+  display: inline-block;
+  font-family: Arial;
+}
+
+label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 10px;
+  color: #cac4c3;
+  transition: all .2s linear;
+}
+
+input {
+  margin-top: 15px;
+  border: 1px solid #999;
+  padding: 3px 2px;
+}
+
+input:invalid + label {
+  top: 3px;
+  opacity: 0;
+}
+
+input:valid + label {
+  opacity: 1;
+}
+
+input:focus + label {
+  color: #0379ff;
+}

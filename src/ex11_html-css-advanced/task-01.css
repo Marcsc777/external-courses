@@ -1,0 +1,125 @@
+p {
+  padding: 70px;
+  text-align: center;
+}
+
+.loader {
+  position: relative;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #dc48aa;
+  border-top: 2px solid #2dcaf9;
+  border-radius: 50%;
+  box-shadow: 0 0 10px lightgreen;
+  animation: my-loader 3s linear infinite;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  border: 2px solid #2dcaf9;
+  border-bottom: 2px solid #dc48aa;
+  border-radius: 50%;
+  box-shadow: 0 0 10px lightgreen;
+  animation: my-loader 1s linear infinite;
+}
+
+@keyframes my-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.wallOne, .wallTwo {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  box-shadow: -1px 4px 6px #101010;
+  background-image: url("https://elite-decor.com.ua/wp-content/uploads/2020/01/Oboi-Ugepa-Odyssee-L09189D-foto-100x100.jpg");
+}
+
+.wallTwo {
+  margin-left: 200px;
+}
+
+.ball {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color:  #a04040;
+  box-shadow: -1px 4px 6px #101010;
+  animation: my-ball 3s linear infinite;
+}
+
+@keyframes my-ball {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.infinity {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to top, red, blue, green, yellow);
+  background-position: 50% 50%;
+  background-size: 200% 200%;
+  animation: my-infinity 25s linear infinite normal 0s forwards;
+}
+
+@keyframes my-infinity {
+  0% {
+    border-radius: 50%;
+  }
+	16% {
+    border-radius: 0%;
+    background-position:50% 50%;
+  }
+	32% {
+    background-position: 0% 0%;
+    width: 200px;
+    border-radius: 0%;
+  }
+	48% {
+    width: 300px;
+    border-radius: 25%;
+    transform: rotate(0deg);
+  }
+	56% {
+    transform: rotate(180deg);
+  }
+	64% {
+    transform: rotate(0deg);
+    background-position: 0% 0%;
+  }
+	82% {
+    background-position:50% 50%;
+    width: 300px;
+    border-radius: 25%;
+  }
+  100% {
+    width: 200px;
+    border-radius: 50%;
+  }
+}
