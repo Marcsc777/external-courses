@@ -127,11 +127,11 @@ footer {
 
 footer span {
   margin-right: 24px;
+  line-height: 21px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 18px;  
   color: #FFFFFF;
 }
 
