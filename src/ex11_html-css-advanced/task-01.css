@@ -44,7 +44,17 @@ p {
   }
 }
 
-.wallOne, .wallTwo {
+.ball {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color:  #a04040;
+  box-shadow: -1px 4px 6px #101010;
+  animation: my-ball 3s linear infinite;
+}
+
+.wall {
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -54,16 +64,6 @@ p {
 
 .wallTwo {
   margin-left: 200px;
-}
-
-.ball {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color:  #a04040;
-  box-shadow: -1px 4px 6px #101010;
-  animation: my-ball 3s linear infinite;
 }
 
 @keyframes my-ball {

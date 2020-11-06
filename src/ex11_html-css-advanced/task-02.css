@@ -4,7 +4,7 @@
   font-family: Arial;
 }
 
-label {
+.shine {
   position: absolute;
   left: 0;
   top: 0;
@@ -13,21 +13,21 @@ label {
   transition: all .2s linear;
 }
 
-input {
+.delivery input {
   margin-top: 15px;
   border: 1px solid #999;
   padding: 3px 2px;
 }
 
-input:invalid + label {
+.delivery input:invalid + .shine {
   top: 3px;
   opacity: 0;
 }
 
-input:valid + label {
+.delivery input:valid + .shine {
   opacity: 1;
 }
 
-input:focus + label {
+.delivery input:focus + .shine {
   color: #0379ff;
 }
