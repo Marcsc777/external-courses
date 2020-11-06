@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  background: #0067A3;
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 14px;
+}
+
+.app-logo span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 33px;
+  color: #FFFFFF;
+  margin-left: 8px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 45px;
+  height: 45px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  flex-basis: 70%;
+  height: 10px;
+}
+
+.menu-item svg {
+  margin-right: 3px;
+}
+
+.menu-create-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 33px;
+}
+
+.create-list {
+  display: flex;
+  align-items: center;
+  width: 181px;
+  height: 100%;
+  margin-right: 50px;
+  border-radius: 5px;
+  background: #FFFFFF;
+}
+
+.create-list svg {
+  margin-left: 9px;
+  margin-right: 13px;
+}
+
+.create-list span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.user-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+}
+
+.user-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+
+.arrow-down {
+  margin-left: 6px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  background: #0067A3;
+}
+
+.tasks {
+  display: flex;
+  align-items: center;
+  margin-left: 67px;
+}
+
+.tasks span {
+  margin-right: 36px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+footer span {
+  margin-right: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+main {
+  height: 590px; 
+  background-color: #0079BF;
+}
