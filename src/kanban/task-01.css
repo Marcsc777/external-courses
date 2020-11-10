@@ -18,7 +18,7 @@ header {
   margin-left: 14px;
 }
 
-.app-logo span {
+.span_logo {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -67,10 +67,10 @@ header {
 
 .create-list svg {
   margin-left: 9px;
-  margin-right: 13px;
+   margin-right: 13px;
 }
 
-.create-list span {
+.span_create_list {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -79,7 +79,7 @@ header {
   color: #000000;
 }
 
-.user-menu {
+#user-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +96,7 @@ header {
   background: #FFFFFF;
 }
 
-.arrow-down {
+#arrow-down {
   margin-left: 6px;
 }
 
@@ -115,7 +115,7 @@ footer {
   margin-left: 67px;
 }
 
-.tasks span {
+.span_tasks {
   margin-right: 36px;
   font-family: Roboto;
   font-style: normal;
@@ -125,17 +125,47 @@ footer {
   color: #FFFFFF;
 }
 
-footer span {
+.span_footer {
   margin-right: 24px;
+  line-height: 21px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
   color: #FFFFFF;
 }
 
 main {
-  height: 590px; 
+  height: 590px;
   background-color: #0079BF;
+}
+
+.list {
+  position: absolute;
+  width: 95px;
+  top: 55px;
+  right: 5px;
+  list-style: none;
+}
+
+.li_list {
+  width: 100%;
+  line-height: 30px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+  background-color: #fefefe;
+  cursor: pointer;
+}
+
+.li_list:hover {
+  color: #0067A3;
+}
+
+.svg_image_active {
+  transform: rotate(180deg);
 }
