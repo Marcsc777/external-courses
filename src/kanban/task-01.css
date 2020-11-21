@@ -296,6 +296,10 @@ div[data-tasks-block="ready"], div[data-tasks-block="inProgress"] {
 	border-radius: 5px;
 }
 
+.li_move:hover{
+	color: white;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }
