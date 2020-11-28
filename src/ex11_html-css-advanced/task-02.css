@@ -1,0 +1,33 @@
+.delivery {
+  position: relative;
+  display: inline-block;
+  font-family: Arial;
+}
+
+.shine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 10px;
+  color: #cac4c3;
+  transition: all .2s linear;
+}
+
+.delivery input {
+  margin-top: 15px;
+  border: 1px solid #999;
+  padding: 3px 2px;
+}
+
+.delivery input:invalid + .shine {
+  top: 3px;
+  opacity: 0;
+}
+
+.delivery input:valid + .shine {
+  opacity: 1;
+}
+
+.delivery input:focus + .shine {
+  color: #0379ff;
+}
