@@ -27,7 +27,7 @@ class Gift {
     let summ = 0;
     
     for (let i = 0; i < this.gift.length; i++) {
-      summ +=  this.gift[i].grams;
+      summ += this.gift[i].grams;
     }
     
     return `Общий вес подарка: ${summ}`;

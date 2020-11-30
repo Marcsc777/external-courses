@@ -13,7 +13,7 @@ Room.prototype.pluggetIn = function(pluggetIn) {
 Room.prototype.determinePower = function() {
   let summ = 0;
   for (let i = 0; i < room.pluggetIn.length; i++) {
-    summ +=  room.pluggetIn[i].powerConsumption;
+    summ += room.pluggetIn[i].powerConsumption;
   }
   
   return `Мощность электроприборов в комнате: ${summ} Вт`;
