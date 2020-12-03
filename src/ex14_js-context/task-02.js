@@ -1,34 +1,31 @@
 class Hangman {
   constructor(name) {
     this.name = name;
-    this.array = this.name.split('');
-    this.newArr = [];
+    this.array = this.name.split('').map(function(num) {
+      return '_';
+    });
     this.arrWrongLetters = [];
     this.mistakes = 0;
-    
-    for (let j = 0; j < this.array.length ; j++) {
-      this.newArr.push('_');
-    }
-    
     this.guess = function(el) {
-      if (this.newArr.join('') === this.array.join('')) {
+      if (this.array.join('') === this.name) {
         console.log("you win!");
-
+        
         return;
       }
       
       if (this.mistakes >= 6) {
         console.log("game over, loser");
+        
         return;
       }
       
-      for (let i = 0; i < this.newArr.length ; i++) {
-        if (el.toLowerCase() === this.array[i] || el.toUpperCase() === this.array[i]) {
-          this.newArr[i] = this.array[i];
+      this.name.split('').map(function(num, index) {
+        if (el.toLowerCase() === num || el.toUpperCase() === num) {
+          this.array[index] = el;
         }
-      }
+      }.bind(this));
       
-      if (this.newArr.indexOf(el.toLowerCase()) === -1 && this.newArr.indexOf(el.toUpperCase()) === -1) {
+      if (this.array.indexOf(el.toLowerCase()) === -1 && this.array.indexOf(el.toUpperCase()) === -1) {
         this.mistakes++;
         
         if (this.arrWrongLetters.indexOf(el.toLowerCase()) === -1 && this.arrWrongLetters.indexOf(el.toUpperCase()) === -1) {
@@ -37,43 +34,33 @@ class Hangman {
         
         console.log(`"wrong letter, errors left ${6 - this.mistakes} | ${this.arrWrongLetters.join(',')}"`);
       } else {
-        console.log(`"${this.newArr.join('')}"`);
+        console.log(`"${this.array.join('')}"`);
       }
       
-      if (this.newArr.join('') === this.array.join('')) {
+      if (this.array.join('') === this.name) {
         console.log("you win!");
       }
-      
-      return;
     };
-    
     this.getGuessedString = function() {
-      return this.newArr.join('');
+      return this.array.join('');
     };
-    
     this.getErrorsLeft = function() {
-      return 6 - this.mistakes;
+      let errLeft = 6 - this.mistakes;
+      return errLeft;
     };
-    
     this.getWrongSymbols = function() {
       return this.arrWrongLetters;
     };
-    
     this.getStatus = function() {
-      return `"${this.newArr.join('')} | errors left ${6 - this.mistakes}"`;
+      return `"${this.array.join('')} | errors left ${6 - this.mistakes}"`;
     };
-    
-    this.startAgain = function(key) {
-      this.key = key;
-      this.name = this.key;
-      this.array = this.name.split('');
-      this.newArr = [];
+    this.startAgain = function(name) {
+      this.name = name;
+      this.array = this.name.split('').map(function(num) {
+        return '_';
+      });
       this.arrWrongLetters = [];
       this.mistakes = 0;
-      
-      for (let j = 0; j < this.array.length ; j++) {
-        this.newArr.push('_');
-      }
     };
   }
 }

@@ -1,66 +1,55 @@
-class MyConstructor {
+class Calculator {
   constructor() {
     this.result = 0;
+  }
+  setState(el) {
+    if (el !== undefined) {
+      this.result = el;
+      console.log('result = ', this.result);
+    }
     
-    this.setState = function(el) {
-      if (el !== undefined) {
-        this.getResult = function() {
-          return el;
-        }
-      }
-      
-      return this;
+    return this;
+  }
+  add(el) {
+    if (el !== undefined) {
+      this.result += el;
+    }
+    
+    return this;
+  }
+  subtract(el) {
+    if (el !== undefined) {
+      this.result -= el;
     };
     
-    this.add = function(el) {
-      if (el !== undefined) {
-        this.result += el;
-      }
-      
-      return this;
-    };
+    return this;
+  }
+  divide(el) {
+    if (el !== undefined) {
+      this.result /= el;
+    }
     
-    this.subtract = function(el) {
-      if (el !== undefined) {
-        this.result -= el;
-      };
-      
-      return this;
-    };
+    return this;
+  }
+  multiply(el) {
+    if (el !== undefined) {
+      this.result *= el;
+    }
     
-    this.divide = function(el) {
-      if (el !== undefined) {
-        this.result /= el;
-      }
-      
-      return this;
-    };
+    return this;
+  }
+  getResult() {
+    return this.result;
+  }
+  reset() {
+    this.result = 0;
     
-    this.multiply = function(el) {
-      if (el !== undefined) {
-        this.result *= el;
-      }
-      
-      return this;
-    };
-    
-    this.getResult = function() {
-      return this.result;
-    };
-    
-    this.reset = function() {
-      this.result = 0;
-      
-      return this;
-    };
-    
-    this.fetchData = function(callback) {
-      this.result = 500;
-      setTimeout(callback, 3000, this.result);
-      return this;
-    };
+    return this;
+  }
+  fetchData(callback) {
+    setTimeout(() => {callback(500);}, 1500);
   }
 }
 
-const newConstructor = new MyConstructor();
+const newConstructor = new Calculator();
 module.exports = newConstructor;
