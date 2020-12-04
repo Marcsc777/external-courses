@@ -40,6 +40,8 @@ class Hangman {
       if (this.array.join('') === this.name) {
         console.log("you win!");
       }
+      
+      return this;
     };
     this.getGuessedString = function() {
       return this.array.join('');
@@ -61,6 +63,8 @@ class Hangman {
       });
       this.arrWrongLetters = [];
       this.mistakes = 0;
+
+      return this;
     };
   }
 }
