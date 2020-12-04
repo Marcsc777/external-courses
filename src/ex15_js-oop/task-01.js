@@ -28,10 +28,12 @@ class Gift {
       if (num.grams < 40) {
         return num.name;
       }
+
+      return null;
     });
     
     sortGrams = sortGrams.filter(function(x) {
-      return x !== undefined && x !== null;
+      return x !== null;
     });
     
     return `Сладости, вес которых менее 40г весом: ${sortGrams}`;
