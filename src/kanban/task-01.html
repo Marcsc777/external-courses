@@ -11,7 +11,7 @@
   <body>
     <header class="doc_header">
       <div class="app_logo">
-        <div class="menumenu">
+        <div class="menu">
           <div class = "menu_item">
             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4.95312 2.19531C5.72656 2.19531 6.35938 2.82812 6.35938 3.60156V5.00781C6.35938 5.78125 5.72656 6.41406 4.95312 6.41406H3.54688C2.77344 6.41406 2.14062 5.78125 2.14062 5.00781V3.60156C2.14062 2.82812 2.77344 2.19531 3.54688 2.19531H4.95312ZM4.95312 0.789062H3.54688C2 0.789062 0.734375 2.05469 0.734375 3.60156V5.00781C0.734375 6.55469 2 7.82031 3.54688 7.82031H4.95312C6.5 7.82031 7.76562 6.55469 7.76562 5.00781V3.60156C7.76562 2.05469 6.5 0.789062 4.95312 0.789062Z" fill="white"/>
@@ -69,7 +69,7 @@
 	</header>
         <div class="tasks-block__tasks-container"></div>
         <footer class="tasks-block__footer">
-	  <button class="tasks-block__add-task-button">+ Add card</button>
+	  <button class="tasks-block__add-task-button" add-task-button="backlog">+ Add card</button>
 	</footer>
       </div>
       <div class="tasks-block" data-tasks-block="ready">
@@ -79,7 +79,7 @@
 	</header>
 	<div class="tasks-block__tasks-container"></div>
 	<footer class="tasks-block__footer">
-	  <button class="tasks-block__add-task-button">+ Add card</button>
+	  <button class="tasks-block__add-task-button" add-task-button="ready">+ Add card</button>
 	</footer>		
       </div>
       <div class="tasks-block" data-tasks-block="inProgress">
@@ -89,17 +89,17 @@
 	</header>
 	<div class="tasks-block__tasks-container"></div>
 	<footer class="tasks-block__footer">
-	  <button class="tasks-block__add-task-button">+ Add card</button>
+	  <button class="tasks-block__add-task-button" add-task-button="inProgress">+ Add card</button>
 	</footer>
       </div>
       <div class="tasks-block" data-tasks-block="finished">
 	<header class="tasks-block__header">
-	<span class="substring1">Finished</span>
-	<span class="substring2">...</span>
+    <span class="substring1">Finished</span>
+    <span class="substring2">...</span>
 	</header>
 	<div class="tasks-block__tasks-container"></div>
 	<footer class="tasks-block__footer">
-	<button class="tasks-block__add-task-button">+ Add card</button>
+	  <button class="tasks-block__add-task-button" add-task-button="finished">+ Add card</button>
 	</footer>
       </div>
     </main>
