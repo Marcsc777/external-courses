@@ -47,7 +47,7 @@ taskBlocksOrder.forEach(key => {
 
       input.classList.add('tasks_enter');
       addButtons[key].parentElement.insertBefore(input, addButtons[key]);
-      addButtons['backlog'].disabled = true;
+      addButtons[key].disabled = true;
       input.addEventListener('blur', ({ target: { value } }) => {
         if (!value) {
           return;
@@ -57,7 +57,7 @@ taskBlocksOrder.forEach(key => {
         tasks[key].push({ id: idCount, title: value });
         input.remove();
         renderTasks();
-        addButtons['backlog'].disabled = false;
+        addButtons[key].disabled = false;
       });
     });
     
