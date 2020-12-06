@@ -1,31 +1,31 @@
 * {
   padding: 0;
   margin: 0;
+  border: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
 }
 
-header {
+.doc_header {/*применяем стили к header*/
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 55px;
   background: #0067A3;
 }
 
-.app-logo {
+.app_logo {
   display: flex;
   align-items: center;
   margin-left: 14px;
 }
 
 .span_logo {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 28px;
   line-height: 33px;
-  color: #FFFFFF;
   margin-left: 8px;
+  color: #FFFFFF;
 }
 
 .menu {
@@ -37,18 +37,17 @@ header {
   height: 45px;
 }
 
-.menu-item {
+.menu_item {
   display: flex;
   align-items: center;
-  flex-basis: 70%;
   height: 10px;
 }
 
-.menu-item svg {
+.menu_item svg {
   margin-right: 3px;
 }
 
-.menu-create-list {
+.menu_create-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,19 +66,16 @@ header {
 
 .create-list svg {
   margin-left: 9px;
-   margin-right: 13px;
+  margin-right: 13px;
 }
 
 .span_create_list {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
 }
 
-#user-menu {
+.user_menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,51 +92,11 @@ header {
   background: #FFFFFF;
 }
 
-#arrow-down {
+.arrow_down {
   margin-left: 6px;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 55px;
-  background: #0067A3;
-}
-
-.tasks {
-  display: flex;
-  align-items: center;
-  margin-left: 67px;
-}
-
-.span_tasks {
-  margin-right: 36px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
-}
-
-.span_footer {
-  margin-right: 24px;
-  line-height: 21px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-main {
-  height: 590px;
-  background-color: #0079BF;
-}
-
-.list {
+.list { /*применяем стили к выпадающему меню*/
   position: absolute;
   width: 95px;
   top: 55px;
@@ -149,17 +105,13 @@ main {
 }
 
 .li_list {
-  width: 100%;
+  cursor: pointer;
   line-height: 30px;
   margin-bottom: 5px;
   border-radius: 5px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   text-align: center;
   background-color: #fefefe;
-  cursor: pointer;
 }
 
 .li_list:hover {
@@ -168,4 +120,154 @@ main {
 
 .svg_image_active {
   transform: rotate(180deg);
+}
+
+.doc_footer { /*применяем стили к footer*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  background: #0067A3;
+}
+
+.tasks {
+  margin-left: 67px;
+}
+
+.span_tasks {
+  margin-right: 36px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.span_footer {
+  margin-right: 24px;
+  line-height: 21px;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.doc_main { /*применяем стили к основному блоку задач*/
+  height: 550px;
+  background-color: #0079BF;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tasks-block {
+  width: 282px;
+  background-color: #c7c7c7;
+  border-radius: 10px;
+}
+
+div[data-tasks-block="backlog"] {
+  margin-left: 19px;
+  margin-right: 12px;
+}
+
+div[data-tasks-block="finished"] {
+  margin-right: 19px;
+  margin-left: 19px;
+}
+
+div[data-tasks-block="ready"], div[data-tasks-block="inProgress"] {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.tasks-block__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  font-size: 18px;
+  line-height: 12px;
+  color: #000000;
+}
+
+.substring2 {
+  line-height: 2px;
+}
+
+.tasks-block__tasks-container {
+  max-height: 425px;
+  overflow: auto;
+}
+
+.tasks-block__add-task-button {
+  margin-left: 14px;
+  padding-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 12px;
+  color: #5C6C84;
+  background-color: transparent;
+}
+
+.tasks-block__add-task-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.tasks-block__footer {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.tasks_enter {
+  cursor: default;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.div_move {
+  cursor: pointer;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #0079BF;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.ul_move {
+  list-style: none;
+}
+
+.li_move {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 3px;
+  border: 2px solid #b7b7b7;
+  border-radius: 5px;
+}
+
+.li_move:hover{
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #a9a5a5;;
 }

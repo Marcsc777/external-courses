@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <title>task-01</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="description" content="ex11_html-css-advanced/kanban/task-01">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="task-01.css">
+    <meta name="description" content="ex11_html-css-advanced/kanban/task-01" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet" />
+    <link rel="stylesheet" href="task-01.css" />
   </head>
   <body>
-    <header>
-      <div class="app-logo">
+    <header class="doc_header">
+      <div class="app_logo">
         <div class="menu">
-          <div class = "menu-item">
+          <div class = "menu_item">
             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4.95312 2.19531C5.72656 2.19531 6.35938 2.82812 6.35938 3.60156V5.00781C6.35938 5.78125 5.72656 6.41406 4.95312 6.41406H3.54688C2.77344 6.41406 2.14062 5.78125 2.14062 5.00781V3.60156C2.14062 2.82812 2.77344 2.19531 3.54688 2.19531H4.95312ZM4.95312 0.789062H3.54688C2 0.789062 0.734375 2.05469 0.734375 3.60156V5.00781C0.734375 6.55469 2 7.82031 3.54688 7.82031H4.95312C6.5 7.82031 7.76562 6.55469 7.76562 5.00781V3.60156C7.76562 2.05469 6.5 0.789062 4.95312 0.789062Z" fill="white"/>
             </svg>
@@ -19,7 +20,7 @@
               <path d="M20.2656 0.601562H0.578125V2.00781H20.2656V0.601562Z" fill="white"/>
             </svg>
           </div>
-          <div class = "menu-item">
+          <div class = "menu_item">
             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4.95312 2.19531C5.72656 2.19531 6.35938 2.82812 6.35938 3.60156V5.00781C6.35938 5.78125 5.72656 6.41406 4.95312 6.41406H3.54688C2.77344 6.41406 2.14062 5.78125 2.14062 5.00781V3.60156C2.14062 2.82812 2.77344 2.19531 3.54688 2.19531H4.95312ZM4.95312 0.789062H3.54688C2 0.789062 0.734375 2.05469 0.734375 3.60156V5.00781C0.734375 6.55469 2 7.82031 3.54688 7.82031H4.95312C6.5 7.82031 7.76562 6.55469 7.76562 5.00781V3.60156C7.76562 2.05469 6.5 0.789062 4.95312 0.789062Z" fill="white"/>
             </svg>
@@ -27,7 +28,7 @@
               <path d="M20.2656 0.601562H0.578125V2.00781H20.2656V0.601562Z" fill="white"/>
             </svg>
           </div>
-          <div class = "menu-item">
+          <div class = "menu_item">
             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4.95312 2.19531C5.72656 2.19531 6.35938 2.82812 6.35938 3.60156V5.00781C6.35938 5.78125 5.72656 6.41406 4.95312 6.41406H3.54688C2.77344 6.41406 2.14062 5.78125 2.14062 5.00781V3.60156C2.14062 2.82812 2.77344 2.19531 3.54688 2.19531H4.95312ZM4.95312 0.789062H3.54688C2 0.789062 0.734375 2.05469 0.734375 3.60156V5.00781C0.734375 6.55469 2 7.82031 3.54688 7.82031H4.95312C6.5 7.82031 7.76562 6.55469 7.76562 5.00781V3.60156C7.76562 2.05469 6.5 0.789062 4.95312 0.789062Z" fill="white"/>
             </svg>
@@ -39,20 +40,20 @@
         <span class="span_logo">Awesome Kanban Board</span>
       </div>
       
-      <div class="menu-create-list">
+      <div class="menu_create-list">
         <div class="create-list">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11 0C4.9 0 0 4.9 0 11C0 17.1 4.9 22 11 22C17.1 22 22 17.1 22 11C22 4.9 17.1 0 11 0ZM16 13H13V16C13 17.1 12.1 18 11 18C9.9 18 9 17.1 9 16V13H6C4.9 13 4 12.1 4 11C4 9.9 4.9 9 6 9H9V6C9 4.9 9.9 4 11 4C12.1 4 13 4.9 13 6V9H16C17.1 9 18 9.9 18 11C18 12.1 17.1 13 16 13Z" fill="black"/>
           </svg>
           <span class="span_create_list">Create new list</span>
         </div>
-        <div id= "user-menu">
+        <div class="user_menu" id="user-menu">
           <div class= "user-avatar">
             <svg width="28" height="35" viewBox="0 0 28 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.9464 23.4224C17.8296 22.1328 17.8744 21.2328 17.8744 20.0544C18.4584 19.748 19.5048 17.7944 19.6816 16.144C20.1408 16.1064 20.8648 15.6584 21.0768 13.8896C21.1912 12.94 20.7368 12.4056 20.46 12.2376C21.2072 9.99041 22.7592 3.03841 17.5896 2.32001C17.0576 1.38561 15.6952 0.912811 13.9248 0.912811C6.84161 1.04321 5.98721 6.26161 7.54001 12.2376C7.26401 12.4056 6.80961 12.94 6.92321 13.8896C7.13601 15.6584 7.85921 16.1064 8.31841 16.144C8.49441 17.7936 9.58241 19.748 10.168 20.0544C10.168 21.2328 10.212 22.1328 10.0952 23.4224C9.08641 26.1344 3.90561 26.3464 0.916809 28.9616C4.04161 32.108 9.10561 34.3584 14.4496 34.3584C19.7936 34.3584 26.0752 30.1392 27.1208 28.988C24.1504 26.3488 18.9576 26.144 17.9464 23.4224Z" fill="black"/>
             </svg>
           </div>
-          <div id="arrow-down">
+          <div class="arrow_down" id="arrow-down">
             <svg id="svg_image" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.415 0.209991L6 4.79499L10.585 0.209991L12 1.62499L6 7.62499L0 1.62499L1.415 0.209991Z" fill="white"/>
             </svg>
@@ -60,57 +61,57 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="doc_main">
+      <div class="tasks-block" data-tasks-block="backlog">
+        <header class="tasks-block__header">
+          <span class="substring1">Backlog</span>
+	  <span class="substring2">...</span>
+	</header>
+        <div class="tasks-block__tasks-container"></div>
+        <footer class="tasks-block__footer">
+	  <button class="tasks-block__add-task-button" add-task-button="backlog">+ Add card</button>
+	</footer>
+      </div>
+      <div class="tasks-block" data-tasks-block="ready">
+        <header class="tasks-block__header">
+	  <span class="substring1">Ready</span>
+	  <span class="substring2">...</span>
+	</header>
+	<div class="tasks-block__tasks-container"></div>
+	<footer class="tasks-block__footer">
+	  <button class="tasks-block__add-task-button" add-task-button="ready">+ Add card</button>
+	</footer>		
+      </div>
+      <div class="tasks-block" data-tasks-block="inProgress">
+	<header class="tasks-block__header">
+	  <span class="substring1">In Progress</span>
+	  <span class="substring2">...</span>
+	</header>
+	<div class="tasks-block__tasks-container"></div>
+	<footer class="tasks-block__footer">
+	  <button class="tasks-block__add-task-button" add-task-button="inProgress">+ Add card</button>
+	</footer>
+      </div>
+      <div class="tasks-block" data-tasks-block="finished">
+	<header class="tasks-block__header">
+    <span class="substring1">Finished</span>
+    <span class="substring2">...</span>
+	</header>
+	<div class="tasks-block__tasks-container"></div>
+	<footer class="tasks-block__footer">
+	  <button class="tasks-block__add-task-button" add-task-button="finished">+ Add card</button>
+	</footer>
+      </div>
     </main>
-    <footer>
+    <footer class="doc_footer">
       <div class="tasks">
         <span class="span_tasks">Active tasks: &lt;N&gt;</span>
         <span class="span_tasks">Finished tasks: &lt;M&gt;</span>
       </div>
       <span class="span_footer">Kanban board by &lt;NAME&gt;, &lt;YEAR&gt;</span>
     </footer>
-    <script>
-      const list = document.createElement('ul');
-      const li_item1 = document.createElement('li');
-      const li_item2 = document.createElement('li');
-      const li_item3 = document.createElement('li');
-
-      list.classList.add('list');
-      li_item1.innerText = "My account";
-      li_item1.classList.add('li_list');
-      li_item2.innerText = "My tasks";
-      li_item2.classList.add('li_list');
-      li_item3.innerText = "Log out";
-      li_item3.classList.add('li_list');
-      
-      list.appendChild(li_item1);
-      list.appendChild(li_item2);
-      list.appendChild(li_item3);
-      
-      const container = document.getElementById('user-menu');
-      const svg_image = document.getElementById('svg_image');
-      const showList = () => {
-        svg_image.classList.add('svg_image_active');
-        container.appendChild(list);
-      };      
-      const hideList = () => {
-        svg_image.classList.remove('svg_image_active');
-        list.remove();
-      };
-      
-      container.addEventListener('click',() => {
-        if (svg_image.classList.contains('svg_image_active')) {
-          hideList();
-        } else {
-          showList();
-        }
-      });
-      
-      document.addEventListener('click', (event) => {
-        if (!container.contains(event.target)) {
-          hideList();
-        }
-      });
-    </script>
+    <script src="task-01drop.js"></script>
+    <script src="task-01mock.js"></script>
+    <script src="task-01.js"></script>
   </body>
 </html>
