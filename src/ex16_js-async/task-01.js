@@ -8,11 +8,12 @@ function fetch(URL, method) {
       xhr.send();
     } else {
       let formData = new FormData();
+      xhr.responseType = 'json';
       xhr.send(formData);
     }
     
-    xhr.onload = () => resolve(console.log('Success!'));
-    xhr.onerror = () => reject(console.log('Ошибка'));
+    xhr.onload = () => resolve(xhr.response);
+    xhr.onerror = () => reject(xhr.statusText);
   });
 }
 
