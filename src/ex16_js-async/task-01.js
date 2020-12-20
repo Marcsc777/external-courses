@@ -13,7 +13,7 @@ function fetch(URL, method) {
     }
     
     xhr.onload = () => resolve(xhr.response);
-    xhr.onerror = () => reject(xhr.statusText);
+    xhr.onerror = () => reject(xhr.status + ', cообщение:' + xhr.statusText);
   });
 }
 
